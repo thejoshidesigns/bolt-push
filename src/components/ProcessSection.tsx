@@ -80,22 +80,30 @@ export default function ProcessSection() {
       <div className="sticky top-0 h-screen flex items-center justify-center px-6 overflow-hidden">
         <div className="max-w-5xl w-full grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           {/* Left — Text */}
-          <div className="relative isolate">
-            <p className="text-apple-secondary text-sm font-medium mb-8">How I Work</p>
+          <div className="relative isolate min-w-0">
+            <p className="text-apple-secondary text-sm font-medium mb-8 relative z-10">How I Work</p>
 
+            {/* Background numeral layer — fully visible, behind text */}
             <div
-              className="absolute top-0 left-0 font-bold pointer-events-none select-none leading-none"
+              className="absolute top-0 left-0 w-full pointer-events-none select-none"
               style={{
-                fontSize: 'clamp(100px, 16vw, 200px)',
+                fontSize: 'clamp(80px, 14vw, 180px)',
+                lineHeight: 0.85,
                 color: '#E5E7EB',
-                lineHeight: 1,
                 zIndex: 0,
+                overflow: 'visible',
+                paddingBottom: '0.1em',
               }}
+              aria-hidden="true"
             >
-              {step.number}
+              <span className="block" style={{ display: 'inline-block' }}>{step.number}</span>
             </div>
 
-            <div className="relative z-10 pt-20 md:pt-28 lg:pt-32 max-w-xl rounded-2xl bg-white/90 backdrop-blur-sm">
+            {/* Text content — transparent background, sits in front of numeral */}
+            <div
+              className="relative z-10 max-w-xl"
+              style={{ paddingTop: 'clamp(90px, 12vw, 150px)' }}
+            >
               <h2
                 key={`title-${active}`}
                 className="font-semibold text-apple-text leading-tight mb-6 animate-fade-up"

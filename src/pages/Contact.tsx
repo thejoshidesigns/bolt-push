@@ -199,7 +199,9 @@ export default function Contact() {
                   rel="noopener noreferrer"
                   className="font-semibold text-apple-accent text-base mb-0.5 hover:underline block"
                 >@thejoshidesigns</a>
-                <p className="text-apple-secondary text-sm mb-5">Instagram · 24K Followers</p>
+                <p className="text-apple-secondary text-sm mb-5">
+                  Instagram · 26K Primary · 41K Combined
+                </p>
                 <button
                   onClick={copyLink}
                   className="flex items-center justify-center gap-2 w-full py-2.5 rounded-full bg-apple-bg border border-apple-border text-apple-secondary text-sm font-medium hover:text-apple-text hover:border-apple-text transition-colors duration-200"

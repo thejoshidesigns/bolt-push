@@ -36,12 +36,12 @@ export default function Home() {
   return (
     <div className="bg-apple-bg">
       {/* Hero */}
-      <section className="pt-32 pb-16 lg:pb-24 px-6 lg:px-10">
+      <section className="pt-32 pb-16 lg:pb-24 px-6 lg:px-10 overflow-hidden">
         <div
-          className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-[minmax(0,1.15fr)_minmax(340px,0.85fr)] gap-10 lg:gap-16 items-center"
+          className="max-w-6xl mx-auto grid grid-cols-1 xl:grid-cols-[minmax(0,1.15fr)_minmax(340px,0.85fr)] gap-10 xl:gap-16 items-center"
         >
           {/* Left column — copy first */}
-          <div className="order-1 lg:order-1 min-w-0">
+          <div className="order-1 xl:order-1 min-w-0 max-w-full overflow-hidden">
             {/* Eyebrow — frosted glass capsule */}
             <div className="glass-pill inline-flex items-center gap-2.5 mb-8 px-4 py-2 rounded-full">
               <span className="w-2 h-2 rounded-full bg-apple-success" />
@@ -50,16 +50,19 @@ export default function Home() {
               </span>
             </div>
 
-            {/* Heading — full wordmark visible at all viewports */}
+            {/* Heading — full wordmark on one line at all viewports */}
             <h1
               className="font-bold text-apple-text leading-[1.05] mb-6 max-w-full"
               style={{
-                fontSize: 'clamp(2rem, 5vw, 5.5rem)',
+                fontSize: 'clamp(1.75rem, 9cqw, 5rem)',
                 letterSpacing: '-0.035em',
-                overflowWrap: 'break-word',
+                containerType: 'inline-size',
               }}
             >
-              <span className="block whitespace-nowrap lg:whitespace-normal">
+              <span
+                className="block whitespace-nowrap"
+                style={{ width: 'max-content', maxWidth: '100%' }}
+              >
                 THEJOSHIDESIGNS
               </span>
             </h1>
@@ -92,7 +95,7 @@ export default function Home() {
           </div>
 
           {/* Right column — cinematic 3D reel, stays in its grid cell */}
-          <div className="order-2 lg:order-2 min-w-0">
+          <div className="order-2 xl:order-2 min-w-0 max-w-full">
             <HeroReel images={reelImages} />
           </div>
         </div>
