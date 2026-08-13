@@ -270,6 +270,17 @@
     cursor: grabbing;
   }
 
+  .hero-wordmark {
+    letter-spacing: -0.035em;
+    font-size: clamp(2rem, 7.2vw, 5rem);
+  }
+
+  @media (min-width: 1280px) {
+    .hero-wordmark {
+      font-size: clamp(3rem, 4.2vw, 4.75rem);
+    }
+  }
+
   /* ── Spatial-glass navigation ── */
   .glass-nav {
     background: rgba(255, 255, 255, 0.72);
