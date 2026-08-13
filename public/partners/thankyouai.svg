@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="40" fill="none" viewBox="0 0 200 40">
+  <g clip-path="url(#tya-icon)">
+    <path fill="#F56138" d="M31.3 0H8.7A8.7 8.7 0 0 0 0 8.7v22.6A8.7 8.7 0 0 0 8.7 40h22.6a8.7 8.7 0 0 0 8.7-8.7V8.7A8.7 8.7 0 0 0 31.3 0Z"/>
+    <path fill="#fff" d="M29.2 9.2a2.5 2.5 0 0 1 0 5h-6.7V30a2.5 2.5 0 0 1-5 0V14.2h-6.7a2.5 2.5 0 1 1 0-5h18.4Z"/>
+    <path fill="#FEECE7" d="M29.2 32.5a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5Z"/>
+  </g>
+  <defs>
+    <clipPath id="tya-icon">
+      <path fill="#fff" d="M0 0h40v40H0z"/>
+    </clipPath>
+  </defs>
+  <text x="52" y="28" font-family="Inter, system-ui, sans-serif" font-size="22" font-weight="600" fill="#111318">ThankYouAI</text>
+</svg>
